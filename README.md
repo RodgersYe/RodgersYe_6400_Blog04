@@ -131,15 +131,11 @@ The archive's **release date** is not necessarily its **download date**. For API
 
 For each state in 2024, the project's price-adjusted per capita personal income is calculated as:
 
-\[
-\text{RPP-adjusted PCPI} = \frac{\text{Nominal PCPI}}{\text{All-items RPP}/100}.
-\]
+$\text{RPP-adjusted PCPI} = \frac{\text{Nominal PCPI}}{\text{All-items RPP}/100}$
 
 An RPP of 100 corresponds to the national average price level. **Rank 1** indicates the highest income, and ties use R's `ties.method = "min"`. The rank-change variable is:
 
-\[
-\text{Rank change} = \text{Nominal rank} - \text{Adjusted rank}.
-\]
+$\text{Rank change} = \text{Nominal rank} - \text{Adjusted rank}$
 
 A **positive** change means a state moves toward rank 1 after the price adjustment. The analysis also calculates counts of states moving up, down, or not moving; absolute rank changes; top-ten overlap; and the correlation between nominal income and RPP.
 
